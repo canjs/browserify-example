@@ -1,0 +1,48 @@
+{
+  "name": "browserify-example",
+  "version": "1.0.0",
+  "description": "An example app for canjs, using browserify.",
+  "author": "Bitovi",
+  "license": "MIT",
+  "homepage": "https://github.com/canjs/browserify-example.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/canjs/browserify-example.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canjs/browserify-example.js/issues"
+  },
+  "keywords": [
+    "CanJS",
+    "DoneJS",
+    "StealJS"
+  ],
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm bundle.js",
+    "develop": "browserify --debug --transform stringify --entry main.js --outfile bundle.js",
+    "build": "browserify --transform stringify --entry main.js --outfile bundle.js"
+  },
+  "dependencies": {
+    "can-component": "^4.0.0",
+    "can-compute": "^4.0.0",
+    "can-connect": "^2.0.1",
+    "can-define": "^2.0.0",
+    "can-route": "^4.0.1",
+    "can-route-pushstate": "^4.0.1",
+    "can-set": "^1.5.1",
+    "can-stache": "^4.0.2",
+    "can-stache-bindings": "^4.0.4"
+  },
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "stringify": "^5.2.0"
+  },
+  "stringify": {
+    "appliesTo": {
+      "includeExtensions": [
+        ".stache"
+      ]
+    }
+  }
+}
