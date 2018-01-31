@@ -24,7 +24,7 @@
     "build": "browserify --transform stringify --entry main.js --outfile bundle.js"
   },
   "dependencies": {
-    "can-component": "^4.0.0",
+    "can-component": "^4.0.1",
     "can-compute": "^4.0.0",
     "can-connect": "^2.0.1",
     "can-define": "^2.0.0",
@@ -36,7 +36,6 @@
   },
   "devDependencies": {
     "browserify": "^15.2.0",
-    "cssify": "^1.0.3",
     "stringify": "^5.2.0"
   },
   "stringify": {
