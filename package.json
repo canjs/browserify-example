@@ -35,7 +35,7 @@
     "can-stache-bindings": "^4.0.4"
   },
   "devDependencies": {
-    "browserify": "^15.2.0",
+    "browserify": "^16.0.0",
     "stringify": "^5.2.0"
   },
   "stringify": {
