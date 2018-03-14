@@ -1,9 +1,11 @@
-var DefineMap = require("can-define/map/map");
-var stache = require("can-stache");
-var template = stache(require("./main.stache"));
+import DefineMap from "can-define/map/map";
+import stache from "can-stache";
+import rawTemplate from "./main.stache";
 
-require("./hello-world");
+import "./hello-world";
 
 var data = new DefineMap({ message: "Hello World" });
+
+var template = stache(rawTemplate);
 
 document.body.appendChild(template(data));
