@@ -22,7 +22,7 @@
     "build": "browserify --transform babelify --transform stringify --entry main.js --outfile dist/bundle.production.js",
     "clean": "rm -rf bundle.js",
     "develop": "browserify --debug --transform babelify --transform stringify --entry main.js --outfile dist/bundle.js",
-    "start": "http-server"
+    "start": "http-server -c-1"
   },
   "dependencies": {
     "can-component": "^4.0.1",
