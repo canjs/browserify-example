@@ -19,9 +19,10 @@
   ],
   "main": "main.js",
   "scripts": {
+    "build": "browserify --transform babelify --transform stringify --entry main.js --outfile dist/bundle.production.js",
     "clean": "rm -rf bundle.js",
-    "develop": "browserify --debug --transform babelify --transform stringify --entry main.js --outfile bundle.js",
-    "build": "browserify --transform babelify --transform stringify --entry main.js --outfile bundle.js"
+    "develop": "browserify --debug --transform babelify --transform stringify --entry main.js --outfile dist/bundle.js",
+    "start": "http-server"
   },
   "dependencies": {
     "can-component": "^4.0.1",
@@ -39,6 +40,7 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^16.0.0",
+    "http-server": "^0.11.1",
     "stringify": "^5.2.0"
   },
   "stringify": {

@@ -4,8 +4,7 @@ import rawTemplate from "./main.stache";
 
 import "./hello-world";
 
-var data = new DefineMap({ message: "Hello World" });
-
-var template = stache(rawTemplate);
+const data = new DefineMap({ message: "Hello World" });
+const template = stache(rawTemplate);
 
 document.body.appendChild(template(data));
