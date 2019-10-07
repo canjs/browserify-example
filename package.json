@@ -25,21 +25,24 @@
     "start": "http-server -c-1"
   },
   "dependencies": {
-    "can-component": "^4.0.1",
+    "can-component": "^5.0.0",
     "can-compute": "^4.0.0",
-    "can-connect": "^2.0.1",
-    "can-define": "^2.0.0",
-    "can-route": "^4.0.1",
-    "can-route-pushstate": "^4.0.1",
-    "can-set": "^1.5.1",
-    "can-stache": "^4.0.2",
-    "can-stache-bindings": "^4.0.4"
+    "can-connect": "^4.0.1",
+    "can-define": "^2.8.0",
+    "can-observable-object": "^1.0.0",
+    "can-query-logic": "^1.2.2",
+    "can-route": "^5.0.0",
+    "can-route-pushstate": "^6.0.0",
+    "can-set": "^1.6.0",
+    "can-stache": "^5.0.0",
+    "can-stache-bindings": "^5.0.1",
+    "can-stache-element": "^1.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
-    "browserify": "^16.0.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
     "http-server": "^0.11.1",
     "stringify": "^5.2.0"
   },
@@ -53,12 +56,7 @@
   "browserify": {
     "transform": [
       [
-        "babelify",
-        {
-          "presets": [
-            "env"
-          ]
-        }
+        "babelify"
       ]
     ]
   }
