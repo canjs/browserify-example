@@ -29,20 +29,20 @@
     "can-compute": "^4.0.0",
     "can-connect": "^4.0.1",
     "can-define": "^2.8.0",
-    "can-observable-object": "^1.0.0",
     "can-query-logic": "^1.2.2",
     "can-route": "^5.0.0",
     "can-route-pushstate": "^6.0.0",
     "can-set": "^1.6.0",
     "can-stache": "^5.0.0",
-    "can-stache-bindings": "^5.0.1",
-    "can-stache-element": "^1.0.0"
+    "can-stache-bindings": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.2",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
+    "core-js": "^3.2.1",
     "http-server": "^0.11.1",
     "stringify": "^5.2.0"
   },

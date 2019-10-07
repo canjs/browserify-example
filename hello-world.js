@@ -1,19 +1,20 @@
-import StacheElement from "can-stache-element";
+import Component from "can-component";
 import stache from "can-stache";
 
-class HelloWorld extends StacheElement {
-  static view = `{{#if visible}}{{message}}{{else}}Click me{{/if}}`;
-
-  static props = {
-    visible: false,
-    message: "Hello There!"
-  };
-
-  connected() {
-    this.listenTo(this, "click", () => {
-      this.visible = !this.visible;
-    });
+Component.extend({
+  tag: "hello-world",
+  view: `{{#if visible}}{{message}}{{else}}Click me{{/if}}`,
+  ViewModel: {
+    visible: {
+      default: false
+    },
+    message: {
+      default: "Hello There!"
+    },
+    connectedCallback(element) {
+      this.listenTo(element, "click", () => {
+        this.visible = !this.visible;
+      });
+    }
   }
-}
-
-customElements.define("hello-world", HelloWorld);
+});
