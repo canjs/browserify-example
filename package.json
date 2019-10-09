@@ -29,7 +29,7 @@
     "can-compute": "^4.0.0",
     "can-connect": "^4.0.1",
     "can-define": "^2.8.0",
-    "can-observable-object": "^1.0.0",
+    "can-observable-object": "1.0.0",
     "can-query-logic": "^1.2.2",
     "can-route": "^5.0.0",
     "can-route-pushstate": "^6.0.0",
