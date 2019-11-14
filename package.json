@@ -31,7 +31,7 @@
     "can-define": "^2.8.0",
     "can-observable-object": "^1.0.0",
     "can-query-logic": "^1.2.2",
-    "can-route": "^5.0.0",
+    "can-route": "^5.0.1",
     "can-route-pushstate": "^6.0.0",
     "can-set": "^1.6.0",
     "can-stache": "^5.0.0",
