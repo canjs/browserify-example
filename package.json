@@ -34,7 +34,7 @@
     "can-route": "^5.0.0",
     "can-route-pushstate": "^6.0.0",
     "can-set": "^1.6.0",
-    "can-stache": "^5.0.0",
+    "can-stache": "^5.1.1",
     "can-stache-bindings": "^5.0.1",
     "can-stache-element": "^1.0.0"
   },
